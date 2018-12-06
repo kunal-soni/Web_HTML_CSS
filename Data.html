@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>BootCamp Visualization Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    $('.dropdown-toggle').dropdown()
+  </script>
+</head>
+<body>
+<header>
+<h1>Latitude</h1>
+<div class="container">
+    <nav class="navbar">
+      <ul>
+        <li><a href="LandingPage.html">Home</a></li>
+        <!-- Single button -->
+        <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="VisualizationPage1.html">Max Temperature</a></li>
+          <li><a href="VisualizationPage2.html">Humidity</a></li>
+          <li><a href="VisualizationPage3.html">Cloudiness</a></li>
+          <li><a href="VisualizationPage4.html">Wind Speed</a></li>
+        </ul>
+        </div>
+        <li>
+          <a href="Comparisons.html">Comparison</a>
+        </li>
+        <li>
+          <a href="Data.html">Data</a>
+        </li>
+      </ul>
+      <select id="nav-select">
+        <option value="LandingPage.html">Home</option>
+        <option value="VisualizationPage1.html">Plots</option>
+        <option value="Comparisons.html">Comparison</option>
+        <option value="Data.html">Data</option>
+      </select>
+      <div class="clearfix"></div>
+    </nav>
+</div>
+</header>
+  <main class="container">
+      <h3>Data</h3>
+      <p>The following table includes all of the data used for plotting during this project.</p>  
+      <embed type="text/html" src="citiescsv.htm" width = "1000" height = "1000">    
+  </main>
+</body>
+</html>
